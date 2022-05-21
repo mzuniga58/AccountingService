@@ -68,6 +68,7 @@ namespace AccountingService.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("journals/id/{id}")]
+        [AllowAnonymous]
         [Authorize(Policy = "Trusted")]
         [SwaggerResponse((int)HttpStatusCode.OK, null, typeof(Journal))]
         [SwaggerResponse((int)HttpStatusCode.NotFound)]

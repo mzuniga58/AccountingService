@@ -2,13 +2,13 @@ using AccountingService.Orchestration;
 using AccountingService.Repositories;
 using AccountingService.Services;
 using AutoMapper;
-using Serilog;
 using CorrelationId;
 using CorrelationId.DependencyInjection;
-using Microsoft.OpenApi.Models;
-using System.Reflection;
-using Microsoft.AspNetCore.Mvc;
 using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Models;
+using Serilog;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
